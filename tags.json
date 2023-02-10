@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330db"
+  },
+  "tagLabel": "Cisco",
+  "tagAssoc": "OEM"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330dc"
+  },
+  "tagLabel": "Dell",
+  "tagAssoc": "OEM"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330dd"
+  },
+  "tagLabel": "IBM",
+  "tagAssoc": "OEM"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330de"
+  },
+  "tagLabel": "Juniper",
+  "tagAssoc": "OEM"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330df"
+  },
+  "tagLabel": "HPE",
+  "tagAssoc": "OEM"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330e0"
+  },
+  "tagLabel": "Network",
+  "tagAssoc": "Infrastructure"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330e1"
+  },
+  "tagLabel": "Server",
+  "tagAssoc": "Infrastructure"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330e2"
+  },
+  "tagLabel": "Firewall",
+  "tagAssoc": "Infrastructure"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330e3"
+  },
+  "tagLabel": "Switch",
+  "tagAssoc": "Infrastructure"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330e4"
+  },
+  "tagLabel": "Router",
+  "tagAssoc": "Infrastructure"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330e5"
+  },
+  "tagLabel": "SAS",
+  "tagAssoc": "Subscription"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330e6"
+  },
+  "tagLabel": "Perpetual",
+  "tagAssoc": "License"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330e7"
+  },
+  "tagLabel": "Term",
+  "tagAssoc": "License"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330e8"
+  },
+  "tagLabel": "Software",
+  "tagAssoc": "Subscription"
+},{
+  "_id": {
+    "$oid": "63e6bbe080bd7b7c45c330e9"
+  },
+  "tagLabel": "Managed Service",
+  "tagAssoc": "Subscription"
+}]
