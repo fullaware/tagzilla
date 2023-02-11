@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "63e54261bf10b7a958ae37f3"
+  },
+  "tags": [
+    {
+      "$oid": "63e6bbe080bd7b7c45c330e0"
+    },
+    {
+      "$oid": "63e6bbe080bd7b7c45c330db"
+    },
+    {
+      "$oid": "63e6bbe080bd7b7c45c330e4"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63e70358ddbf555980fe15e5"
+  },
+  "tags": [
+    {
+      "$oid": "63e6bbe080bd7b7c45c330e0"
+    },
+    {
+      "$oid": "63e6bbe080bd7b7c45c330db"
+    },
+    {
+      "$oid": "63e6bbe080bd7b7c45c330e4"
+    }
+  ]
+}]
