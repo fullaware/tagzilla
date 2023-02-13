@@ -12,7 +12,10 @@ cursor2 = db.products.aggregate([
     {
         '$match': {
             "$and": [
-                {'tag_ids': ObjectId('63e6bbe080bd7b7c45c330db')}
+                #{'tag_ids': ObjectId('63e6bbe080bd7b7c45c330db')}, # Cisco
+                #{'tag_ids': ObjectId('63e6bbe080bd7b7c45c330de')}, # Juniper
+                {'tag_ids': ObjectId('63e9528ad3f4e89fd26e07f1')} # Unicorn
+                
             ]
         }
     }, {
