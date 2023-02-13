@@ -36,3 +36,16 @@ cursor2 = db.products.aggregate([
 
 for doc2 in cursor2:
     pprint.pprint(doc2)
+
+"""Returns the following
+
+{'_id': ObjectId('63e54261bf10b7a958ae37f3'),
+ 'tagAssoc': 'OEM',
+ 'tagLabel': 'Cisco'}
+{'_id': ObjectId('63e54261bf10b7a958ae37f3'),
+ 'tagAssoc': 'Infrastructure',
+ 'tagLabel': 'Network'}
+{'_id': ObjectId('63e54261bf10b7a958ae37f3'),
+ 'tagAssoc': 'Infrastructure',
+ 'tagLabel': 'Router'}
+"""
