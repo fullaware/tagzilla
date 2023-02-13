@@ -8,27 +8,31 @@ for doc in cursor:
     pprint.pprint(doc) """
 
 
-cursor2 = db.products.aggregate( [
-  {"$match":{"_id":ObjectId("63e54261bf10b7a958ae37f3")}},
-  {
-    "$lookup": {
-      "from": "tags",
-      "localField": "tags",
-      "foreignField": "_id",
-      "as": "tagAssets",
-    },
-  },
-  {
-    "$unwind": "$tagAssets",
-  },
-  {
-    "$project": {
-      "_id":0,
-      "tagLabel": "$tagAssets.tagLabel",
-      "tagAssoc": "$tagAssets.tagAssoc",
-    },
-  },
-] )
+cursor2 = db.products.aggregate([
+    {
+        '$match': {
+            "$and": [
+                {'tag_ids': ObjectId('63e6bbe080bd7b7c45c330db')}
+            ]
+        }
+    }, {
+        '$lookup': {
+            'from': 'tags',
+            'localField': 'tag_ids',
+            'foreignField': '_id',
+            'as': 'tagAssets'
+        }
+    }, {
+        '$unwind': {
+            'path': '$tagAssets'
+        }
+    }, {
+        '$project': {
+            'tagAssoc': '$tagAssets.tagAssoc',
+            'tagLabel': '$tagAssets.tagLabel'
+        }
+    }
+])
 
 for doc2 in cursor2:
     pprint.pprint(doc2)
