@@ -2,19 +2,24 @@ from dbconn import db
 import pprint
 from bson.objectid import ObjectId
 
-""" cursor = db.products.find({"tags":  ObjectId("63e54024bf10b7a958ae37eb") }})
+"""Find all labels by name *like*
+cursor = db.tags.aggregate([
+    {
+    '$match': {"tagLabel": {"$regex": "jun",'$options': 'i'}}
+    }
+    ])
 
 for doc in cursor:
-    pprint.pprint(doc) """
-
+    pprint.pprint(doc)
+"""
 
 cursor2 = db.products.aggregate([
     {
         '$match': {
             "$and": [
-                {'tag_ids': ObjectId('63e6bbe080bd7b7c45c330db')}, # Cisco
+                #{'tag_ids': ObjectId('63e6bbe080bd7b7c45c330db')}, # Cisco
                 #{'tag_ids': ObjectId('63e6bbe080bd7b7c45c330de')}, # Juniper
-                #{'tag_ids': ObjectId('63e9528ad3f4e89fd26e07f1')} # Unicorn
+                {'tag_ids': ObjectId('63e9528ad3f4e89fd26e07f1')} # Unicorn
                 
             ]
         }
