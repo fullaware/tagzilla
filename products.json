@@ -23,6 +23,9 @@
   "_id": {
     "$oid": "63e70358ddbf555980fe15e5"
   },
+  "desc": "MX304 premium chassis bundle; includes 2 REs, 3 fan trays, and 2power supplies",
+  "partnum": "MX304-PREM",
+  "uniq": "JZ418234992",
   "tag_ids": [
     {
       "$oid": "63e6bbe080bd7b7c45c330e0"
@@ -47,6 +50,27 @@
     },
     {
       "$oid": "63e6bbe080bd7b7c45c330dc"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63e98f83d3f4e89fd26e0802"
+  },
+  "desc": "C8500-20X6C",
+  "partnum": "L-DNA-C8500",
+  "uniq": "47717234865763",
+  "tag_ids": [
+    {
+      "$oid": "63e6bbe080bd7b7c45c330e0"
+    },
+    {
+      "$oid": "63e6bbe080bd7b7c45c330db"
+    },
+    {
+      "$oid": "63e6bbe080bd7b7c45c330db"
+    },
+    {
+      "$oid": "63e6bbe080bd7b7c45c330e4"
     }
   ]
 }]
