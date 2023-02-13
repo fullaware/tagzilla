@@ -2,7 +2,7 @@ from dbconn import db
 import pprint
 from bson.objectid import ObjectId
 
-""" cursor = db.products.find({"tags":  {"$all": ["63e54024bf10b7a958ae37eb"] }})
+""" cursor = db.products.find({"tags":  ObjectId("63e54024bf10b7a958ae37eb") }})
 
 for doc in cursor:
     pprint.pprint(doc) """
