@@ -2,9 +2,15 @@
   "_id": {
     "$oid": "63e54261bf10b7a958ae37f3"
   },
-  "tags": [
+  "desc": "C8500-20X6C",
+  "partnum": "L-DNA-C8500",
+  "uniq": "47717234892834",
+  "tag_ids": [
     {
       "$oid": "63e6bbe080bd7b7c45c330e0"
+    },
+    {
+      "$oid": "63e6bbe080bd7b7c45c330db"
     },
     {
       "$oid": "63e6bbe080bd7b7c45c330db"
@@ -17,15 +23,30 @@
   "_id": {
     "$oid": "63e70358ddbf555980fe15e5"
   },
-  "tags": [
+  "tag_ids": [
     {
       "$oid": "63e6bbe080bd7b7c45c330e0"
     },
     {
-      "$oid": "63e6bbe080bd7b7c45c330db"
+      "$oid": "63e6bbe080bd7b7c45c330de"
     },
     {
       "$oid": "63e6bbe080bd7b7c45c330e4"
+    },
+    {
+      "$oid": "63e9528ad3f4e89fd26e07f1"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63e804e702bc890789137588"
+  },
+  "tag_ids": [
+    {
+      "$oid": "63e6bbe080bd7b7c45c330e1"
+    },
+    {
+      "$oid": "63e6bbe080bd7b7c45c330dc"
     }
   ]
 }]

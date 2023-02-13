@@ -88,4 +88,10 @@
   },
   "tagLabel": "Managed Service",
   "tagAssoc": "Subscription"
+},{
+  "_id": {
+    "$oid": "63e9528ad3f4e89fd26e07f1"
+  },
+  "tagLabel": "Unicorn",
+  "tagAssoc": "Group"
 }]
