@@ -3,23 +3,24 @@ import pprint
 from bson.objectid import ObjectId
 
 """Find all labels by name *like*
+"""
 cursor = db.tags.aggregate([
     {
-    '$match': {"tagLabel": {"$regex": "jun",'$options': 'i'}}
+    '$match': {"tagAssoc": {"$regex": "oem",'$options': 'i'}}
     }
     ])
 
 for doc in cursor:
     pprint.pprint(doc)
-"""
 
-cursor2 = db.products.aggregate([
+
+cursor2 = db.assets.aggregate([
     {
         '$match': {
             "$and": [
                 {'tag_ids': ObjectId('63e6bbe080bd7b7c45c330db')}, # Cisco
                 #{'tag_ids': ObjectId('63e6bbe080bd7b7c45c330de')}, # Juniper
-                #{'tag_ids': ObjectId('63e9528ad3f4e89fd26e07f1')} # Unicorn
+                {'tag_ids': ObjectId('63e9528ad3f4e89fd26e07f1')} # Unicorn
                 
             ]
         }
@@ -30,30 +31,34 @@ cursor2 = db.products.aggregate([
             'foreignField': '_id',
             'as': 'tagAssets'
         }
-    }, {
-        '$unwind': {
-            'path': '$tagAssets'
-        }
-    }, {
-        '$project': {
-            'tagAssoc': '$tagAssets.tagAssoc',
-            'tagLabel': '$tagAssets.tagLabel'
-        }
     }
 ])
 
 for doc2 in cursor2:
     pprint.pprint(doc2)
 
-"""Returns the following
 
-{'_id': ObjectId('63e54261bf10b7a958ae37f3'),
- 'tagAssoc': 'OEM',
- 'tagLabel': 'Cisco'}
-{'_id': ObjectId('63e54261bf10b7a958ae37f3'),
- 'tagAssoc': 'Infrastructure',
- 'tagLabel': 'Network'}
-{'_id': ObjectId('63e54261bf10b7a958ae37f3'),
- 'tagAssoc': 'Infrastructure',
- 'tagLabel': 'Router'}
-"""
+# Search by tagLabel 
+tagLabel = "cis"
+cursor3 = db.tags.aggregate(
+   [
+    {
+        '$match': {
+            'tagLabel': {
+                '$regex': tagLabel, 
+                '$options': 'i'
+            }
+        }
+    }, {
+        '$lookup': {
+            'from': 'assets', 
+            'localField': '_id', 
+            'foreignField': 'tag_ids', 
+            'as': 'result'
+        }
+    }
+]
+)
+
+for doc3 in cursor3:
+    pprint.pprint(doc3)

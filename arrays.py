@@ -12,7 +12,7 @@ db.products.update_one(
 """
 
 # Insert objects to array without making duplicates
-db.products.update_one(
+db.assets.update_one(
     {"_id": ObjectId("63e54261bf10b7a958ae37f3")},
     {"$addToSet": {
         "tag_ids": {
@@ -22,7 +22,7 @@ db.products.update_one(
              ObjectId("63e6bbe080bd7b7c45c330e4")]}}})
 
 
-cursor = db.products.find({"_id": ObjectId("63e54261bf10b7a958ae37f3")})
+cursor = db.assets.find({"_id": ObjectId("63e54261bf10b7a958ae37f3")})
 
 for doc in cursor:
     pprint.pprint(doc)
