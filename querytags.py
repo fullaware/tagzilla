@@ -2,63 +2,78 @@ from dbconn import db
 import pprint
 from bson.objectid import ObjectId
 
-"""Find all labels by name *like*
-"""
-cursor = db.tags.aggregate([
-    {
-    '$match': {"tagAssoc": {"$regex": "oem",'$options': 'i'}}
-    }
-    ])
+# Find all labels by name *like*
 
-for doc in cursor:
-    pprint.pprint(doc)
+def findTagId (tagLabel = "Unicorn"):
+   """Find document in tags that match tagLabel
+   """
+   
+   doc = db.tags.find_one({"tagLabel": {"$regex": tagLabel,'$options': 'i'}})
 
-
-cursor2 = db.assets.aggregate([
-    {
-        '$match': {
-            "$and": [
-                {'tag_ids': ObjectId('63e6bbe080bd7b7c45c330db')}, # Cisco
-                #{'tag_ids': ObjectId('63e6bbe080bd7b7c45c330de')}, # Juniper
-                {'tag_ids': ObjectId('63e9528ad3f4e89fd26e07f1')} # Unicorn
-                
-            ]
-        }
-    }, {
-        '$lookup': {
-            'from': 'tags',
-            'localField': 'tag_ids',
-            'foreignField': '_id',
-            'as': 'tagAssets'
-        }
-    }
-])
-
-for doc2 in cursor2:
-    pprint.pprint(doc2)
+   pprint.pprint(doc["_id"])
 
 
-# Search by tagLabel 
-tagLabel = "cis"
-cursor3 = db.tags.aggregate(
-   [
-    {
-        '$match': {
-            'tagLabel': {
-                '$regex': tagLabel, 
-                '$options': 'i'
-            }
-        }
-    }, {
-        '$lookup': {
-            'from': 'assets', 
-            'localField': '_id', 
-            'foreignField': 'tag_ids', 
-            'as': 'result'
-        }
-    }
-]
-)
+def findAssetsMultipleTagIds ():
+   """Return all documents that match ALL ObjectIds within $and array
+   """
+   cursor2 = db.assets.aggregate([
+      {
+         '$match': {
+               "$and": [
+                  # Add Objects Here
+                  {'tagIds': ObjectId('63e9528ad3f4e89fd26e07f1')} # Unicorn
+                  
+               ]
+         }
+      }, {
+         '$lookup': {
+               'from': 'tags',
+               'localField': 'tagIds',
+               'foreignField': '_id',
+               'as': 'tags'
+         }
+      },{
+         '$project': {'originFields': 0 , 'tagIds': 0}  # Don't show these fields
+      }
+   ])
 
-for doc3 in cursor3:
-    pprint.pprint(doc3)
+   for doc2 in cursor2:
+      pprint.pprint(doc2)
+
+
+# Search by tags.tagLabel 
+
+def findAssetsLabel (tagLabel="rout"):
+   """Return all documents that match tags.tagLabel
+   """
+   cursor3 = db.tags.aggregate(
+      [
+      {
+         '$match': {
+               'tagLabel': {
+                  '$regex': tagLabel, 
+                  '$options': 'i'
+               }
+         }
+      }, {
+         '$lookup': {
+               'from': 'assets', 
+               'localField': '_id', 
+               'foreignField': 'tagIds', 
+               'as': 'result'
+         }
+      },{
+         '$project': {'result.originFields': 0 , 'result.tagIds': 0}  # Don't show these fields
+      }
+   ]
+   )
+
+   for doc3 in cursor3:
+      pprint.pprint(doc3)
+
+
+# findTagId("rout")
+
+# findAssetsMultipleTagIds()
+
+findAssetsLabel()
