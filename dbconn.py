@@ -2,6 +2,14 @@ import pymongo
 import urllib.parse
 from dotenv import dotenv_values
 
+"""
+Create .env file and set the following variables
+
+DB_SERVER="LOCALHOST"
+DB_USER="admin"
+DB_PW="password123"
+"""
+
 config = dotenv_values(".env")
 
 db_server = config['DB_SERVER']
