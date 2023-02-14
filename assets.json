@@ -2,15 +2,17 @@
   "_id": {
     "$oid": "63e54261bf10b7a958ae37f3"
   },
-  "desc": "C8500-20X6C",
-  "partnum": "L-DNA-C8500",
-  "uniq": "47717234892834",
-  "tag_ids": [
+  "desc": "UCS C220 M6 Rack w/o CPU, mem, drives, 1U wSFF HDD backplane",
+  "partNum": "UCSC-C220-M6S",
+  "uniq": "WZP262802ZX",
+  "class": "Infrastructure",
+  "oem": "Cisco",
+  "sqlId": "MS_SQL_ID",
+  "customerId": "8675309",
+  "userId": "5559942",
+  "tagIds": [
     {
       "$oid": "63e6bbe080bd7b7c45c330e0"
-    },
-    {
-      "$oid": "63e6bbe080bd7b7c45c330db"
     },
     {
       "$oid": "63e6bbe080bd7b7c45c330e4"
@@ -18,59 +20,200 @@
     {
       "$oid": "63e9528ad3f4e89fd26e07f1"
     }
-  ]
-},{
-  "_id": {
-    "$oid": "63e70358ddbf555980fe15e5"
-  },
-  "desc": "MX304 premium chassis bundle; includes 2 REs, 3 fan trays, and 2power supplies",
-  "partnum": "MX304-PREM",
-  "uniq": "JZ418234992",
-  "tag_ids": [
-    {
-      "$oid": "63e6bbe080bd7b7c45c330e0"
+  ],
+  "originFields": {
+    "Product /Offer Name": "UCSC-C220-M6S",
+    "Description": "UCS C220 M6 Rack w/o CPU, mem, drives, 1U wSFF HDD backplane",
+    "Status": "ACTIVE",
+    "End Date": "15-Sep-2025",
+    "PAK/Serial Number": "WZP262802ZX",
+    "Parent PAK/Serial Number": "WZP262802ZX",
+    "Major/Minor": "Major",
+    "Instance Number": "#FMT",
+    "Parent Instance Number": {
+      "$numberLong": "5718458140"
     },
-    {
-      "$oid": "63e6bbe080bd7b7c45c330de"
+    "End Customer GU": 19471,
+    "End Customer GU Name": "THE HARVEST LENS FOUNDATION",
+    "End Customer ID": "#FMT",
+    "End Customer Name": "THE HARVEST LENS FOUNDATION",
+    "End Customer Country/Region": "US",
+    "Quantity": "31-Dec-1899",
+    "Installed Base Status": "Latest-INSTALLED",
+    "Potential Takeover": "No",
+    "Carton ID": {
+      "$numberLong": "10619759860"
     },
-    {
-      "$oid": "63e6bbe080bd7b7c45c330e4"
-    },
-    {
-      "$oid": "63e9528ad3f4e89fd26e07f1"
-    }
-  ]
+    "Product Family": "UCSC",
+    "Product Group": "SERVER",
+    "Product Sub Type": "SYSTEM",
+    "Item Type": "CHASSIS",
+    "Warranty Type": "WARR-3YR-HW-90D-SW",
+    "Warranty Status": "Under Warranty",
+    "Warranty End Date": "15-Dec-2025",
+    "Ship Date": "15-Sep-2022",
+    "Product Bill To ID": 134479,
+    "Product Ship to ID": 1039004133,
+    "Smart Account / Virtual Account": "HARVEST LENS"
+  }
 },{
   "_id": {
     "$oid": "63e804e702bc890789137588"
   },
-  "tag_ids": [
+  "desc": "16GB RDIMM SRx4 3200 (8Gb)",
+  "partNum": "UCS-MR-X16G1RW",
+  "uniq": "WZP26270ZE9",
+  "class": "Infrastructure",
+  "oem": "Cisco",
+  "sqlId": "MS_SQL_ID",
+  "customerId": "8675309",
+  "userId": "5559942",
+  "tagIds": [
     {
       "$oid": "63e6bbe080bd7b7c45c330e1"
     },
     {
       "$oid": "63e6bbe080bd7b7c45c330dc"
     }
-  ]
+  ],
+  "originFields": {
+    "Product /Offer Name": "UCS-MR-X16G1RW",
+    "Description": "16GB RDIMM SRx4 3200 (8Gb)",
+    "Status": "ACTIVE",
+    "End Date": "15-Sep-2025",
+    "PAK/Serial Number": "80AD01221336829945",
+    "Parent PAK/Serial Number": "WZP26270ZE9",
+    "Major/Minor": "Minor",
+    "Instance Number": "#FMT",
+    "Parent Instance Number": {
+      "$numberLong": "5718458123"
+    },
+    "End Customer GU": 19471,
+    "End Customer GU Name": "THE HARVEST LENS FOUNDATION",
+    "End Customer ID": "#FMT",
+    "End Customer Name": "THE HARVEST LENS FOUNDATION",
+    "End Customer Country/Region": "US",
+    "Quantity": "31-Dec-1899",
+    "Installed Base Status": "Latest-INSTALLED",
+    "Potential Takeover": "No",
+    "Carton ID": {
+      "$numberLong": "10619760031"
+    },
+    "Product Family": "UCSMEM",
+    "Product Group": "MEMORY",
+    "Product Sub Type": "SYSTEM",
+    "Item Type": "CARD",
+    "Warranty Type": "WARR-3YR-HW-90D-SW",
+    "Warranty Status": "Under Warranty",
+    "Warranty End Date": "15-Dec-2025",
+    "Ship Date": "15-Sep-2022",
+    "Product Bill To ID": 134479,
+    "Product Ship to ID": 1039004133,
+    "Smart Account / Virtual Account": "HARVEST LENS"
+  }
 },{
   "_id": {
     "$oid": "63e98f83d3f4e89fd26e0802"
   },
-  "desc": "C8500-20X6C",
-  "partnum": "L-DNA-C8500",
-  "uniq": "47717234865763",
-  "tag_ids": [
+  "desc": "UCS C220 M6 Rack w/o CPU, mem, drives, 1U wSFF HDD backplane",
+  "partnum": "UCSC-C220-M6S",
+  "uniq": "WZP26270ZX9",
+  "tagIds": [
     {
       "$oid": "63e6bbe080bd7b7c45c330e0"
     },
     {
-      "$oid": "63e6bbe080bd7b7c45c330db"
+      "$oid": "63e6bbe080bd7b7c45c330e4"
+    }
+  ],
+  "class": "Infrastructure",
+  "oem": "Cisco",
+  "sqlId": "MS_SQL_ID",
+  "customerId": "8675309",
+  "userId": "5559942",
+  "originFields": {
+    "Product /Offer Name": "UCSC-C220-M6S",
+    "Description": "UCS C220 M6 Rack w/o CPU, mem, drives, 1U wSFF HDD backplane",
+    "Status": "ACTIVE",
+    "End Date": "15-Sep-2025",
+    "PAK/Serial Number": "WZP26270ZX9",
+    "Parent PAK/Serial Number": "WZP26270ZX9",
+    "Major/Minor": "Major",
+    "Instance Number": "#FMT",
+    "Parent Instance Number": {
+      "$numberLong": "5718458131"
     },
+    "End Customer GU": 19471,
+    "End Customer GU Name": "THE HARVEST LENS FOUNDATION",
+    "End Customer ID": "#FMT",
+    "End Customer Name": "THE HARVEST LENS FOUNDATION",
+    "End Customer Country/Region": "US",
+    "Quantity": "31-Dec-1899",
+    "Installed Base Status": "Latest-INSTALLED",
+    "Potential Takeover": "No",
+    "Carton ID": {
+      "$numberLong": "10619759899"
+    },
+    "Product Family": "UCSC",
+    "Product Group": "SERVER",
+    "Product Sub Type": "SYSTEM",
+    "Item Type": "CHASSIS",
+    "Warranty Type": "WARR-3YR-HW-90D-SW",
+    "Warranty Status": "Under Warranty",
+    "Warranty End Date": "15-Dec-2025",
+    "Ship Date": "15-Sep-2022",
+    "Product Bill To ID": 134479,
+    "Product Ship to ID": 1039004133,
+    "Smart Account / Virtual Account": "HARVEST LENS"
+  }
+},{
+  "_id": {
+    "$oid": "63eaf6a102bc89078913759b"
+  },
+  "desc": "^(EOS-PB2483) Catalyst 4000 Supervisor II",
+  "partNum": "WS-X4013",
+  "uniq": "JAE063208PF",
+  "tagIds": [
     {
-      "$oid": "63e6bbe080bd7b7c45c330db"
+      "$oid": "63e6bbe080bd7b7c45c330e0"
     },
     {
       "$oid": "63e6bbe080bd7b7c45c330e4"
     }
-  ]
+  ],
+  "class": "Infrastructure",
+  "oem": "Cisco",
+  "sqlId": "MS_SQL_ID",
+  "customerId": "8675309",
+  "userId": "5559942",
+  "originFields": {
+    "Product /Offer Name": "WS-X4013",
+    "Description": "^(EOS-PB2483) Catalyst 4000 Supervisor II",
+    "Status": "NEVER COVERED",
+    "PAK/Serial Number": "JAE063208PF",
+    "Parent PAK/Serial Number": "JAE063208PF",
+    "Major/Minor": "Major",
+    "Instance Number": "#FMT",
+    "Parent Instance Number": 130738639,
+    "End Customer GU": 19471,
+    "End Customer GU Name": "THE HARVEST LENS FOUNDATION",
+    "End Customer ID": "06-Sep-4702",
+    "End Customer Name": "HARVEST LENS FOUNDATION",
+    "End Customer Country/Region": "US",
+    "Quantity": "31-Dec-1899",
+    "Installed Base Status": "Terminated-AUTO_DEINSTALLED",
+    "Potential Takeover": "No",
+    "Product Family": "C4500",
+    "Product Group": "BOARD",
+    "Product Sub Type": "SYSTEM",
+    "Last Date of Support": "31-May-2010",
+    "Last Date of Sale": "03-May-2005",
+    "Item Type": "CARD",
+    "Warranty Type": "WARR-DEFAULT-90DAY",
+    "Warranty Status": "Not Under Warranty",
+    "Warranty End Date": "09-Mar-2003",
+    "Ship Date": "09-Sep-2002",
+    "Product Bill To ID": 1612035,
+    "Product Ship to ID": 1800270
+  }
 }]

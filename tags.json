@@ -1,35 +1,5 @@
 [{
   "_id": {
-    "$oid": "63e6bbe080bd7b7c45c330db"
-  },
-  "tagLabel": "Cisco",
-  "tagAssoc": "OEM"
-},{
-  "_id": {
-    "$oid": "63e6bbe080bd7b7c45c330dc"
-  },
-  "tagLabel": "Dell",
-  "tagAssoc": "OEM"
-},{
-  "_id": {
-    "$oid": "63e6bbe080bd7b7c45c330dd"
-  },
-  "tagLabel": "IBM",
-  "tagAssoc": "OEM"
-},{
-  "_id": {
-    "$oid": "63e6bbe080bd7b7c45c330de"
-  },
-  "tagLabel": "Juniper",
-  "tagAssoc": "OEM"
-},{
-  "_id": {
-    "$oid": "63e6bbe080bd7b7c45c330df"
-  },
-  "tagLabel": "HPE",
-  "tagAssoc": "OEM"
-},{
-  "_id": {
     "$oid": "63e6bbe080bd7b7c45c330e0"
   },
   "tagLabel": "Network",
